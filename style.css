@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    min-height: 100vh;
+    color: #fff;
+    background: hsl(257, 40%, 49%);
+    background-image: url('./images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    
+    /* background: hsl(300, 69%, 71%); */
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 0.5em;
+}
+p{
+    font-size: 0.8rem;
+    margin-bottom: 1.7em;
+}
+.container{
+    margin: 0 auto;
+    width: 350px;
+    
+    padding: 2em;
+
+}
+
+.right{
+    text-align: center;
+}
+
+.main__img{
+    width: 280px;
+    margin-bottom: 2.5rem;
+}
+
+.logo{
+    width: 120px;
+    margin-bottom: 2.5rem;
+}
+
+.btn{
+    background: #fff;
+    color: hsl(257, 40%, 49%);
+    padding: 0.8em 4em;
+    border-radius: 50px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    box-shadow: 4px 3px 3px 3px rgba(25, 25, 26, 0.2);
+    font-weight: 400;
+}
+.social{
+    margin-top: 3em;
+}
+
+.social i{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0.5em;
+    font-size: 0.7rem;
+    margin-right: 0.5em;
+    border-radius: 50%;
+}
+.social i:first-child{
+    padding: 0.5em 0.7em;
+}
+i:hover{
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+.left{
+    display: none;
+}
+
+.btn:hover{
+    color: #fff;
+    background: hsl(300, 69%, 71%);
+    cursor: pointer;
+
+}
+
+@media(min-width:800px){
+    body{
+        background-image: url('./images/bg-desktop.svg');
+    }
+    .right .main__img{
+        display: none;
+    }
+    .right{
+        margin-top: 2em;
+        max-width: 550px;
+        text-align: left;
+    }
+    .right p{
+        font-size: 1rem;
+    }
+    .right h1{
+        max-width: 500px;
+        font-size: 2.5rem;
+    }
+    .container{
+        width: 98%;
+        height: 98vh;
+     
+    }
+    .logo{
+        width: 170px;
+        margin-left: 3rem; 
+         
+    }
+    .hero{
+        display: flex;
+        gap: 2em;
+        padding: 0 2.5rem;
+    }
+    .left{
+        display: block;
+    }
+    .left img{
+        width: 700px;
+        height: 500px;
+       
+        background-size: cover;
+    }
+
+    .social{
+        position: absolute;
+         
+        bottom: 5%;
+        right: 5%;
+    }
+
+    .social i{
+        font-size: 1rem;
+    }
+}
